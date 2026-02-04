@@ -1,24 +1,204 @@
-﻿<section id="contact" class="bg-black py-24 px-6 border-t border-slate-900">
+﻿<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Official website for the Society of Mayflower Descendants in the State of Alabama. Honoring our Pilgrim ancestors since 1952.">
+    <title>Alabama Mayflower Society | Official Site</title>
+
+    <script src="https://cdn.tailwindcss.com/3.4.1"></script>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600;700&display=swap');
+
+        html {
+            /* Fixes the sticky header covering section titles when jumping to sections */
+            scroll-padding-top: 90px;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .font-display {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .glass-panel {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .bg-hero {
+            background-image:
+                linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.9)),
+                url('https://images.unsplash.com/photo-1599407335043-4672e3a74313?auto=format&fit=crop&q=80&w=1920');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-950 text-slate-200 antialiased">
+
+    <nav class="fixed w-full z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-800">
+        <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center space-x-4">
+                <img
+                    src="images/logo.png"
+                    alt="Alabama Mayflower Society Logo"
+                    class="w-12 h-12 rounded-full border-2 border-indigo-500"
+                >
+                <span class="font-display text-xl font-bold text-white">
+                    Alabama Mayflower
+                </span>
+            </div>
+
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="#welcome" class="hover:text-indigo-400 transition-colors text-sm font-medium">Home</a>
+                <a href="#membership" class="hover:text-indigo-400 transition-colors text-sm font-medium">Membership</a>
+                <a href="#officers" class="hover:text-indigo-400 transition-colors text-sm font-medium">Leadership</a>
+                <a href="#contact" class="px-6 py-2 bg-indigo-600 hover:bg-indigo-500 text-white rounded-full text-sm font-bold transition-all shadow-lg">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="bg-hero min-h-screen flex items-center pt-24 px-6">
+            <div class="container mx-auto">
+                <div class="max-w-3xl">
+                    <span class="inline-block px-4 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-400 text-xs font-bold uppercase tracking-widest mb-6">
+                        Established 1952
+                    </span>
+                    <h1 class="font-display text-5xl md:text-7xl font-bold text-white leading-tight mb-8">
+                        Honoring Our <span class="text-indigo-400">Pilgrim Legacy</span>
+                    </h1>
+                    <p class="text-xl text-slate-300 mb-10 leading-relaxed">
+                        Preserving the history of the Mayflower passengers and their impact on American self-governance for future generations in the state of Alabama.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#membership" class="px-8 py-4 bg-white text-slate-950 font-bold rounded-full hover:bg-indigo-50 transition-all shadow-xl">
+                            Join the Society
+                        </a>
+                        <a href="#welcome" class="px-8 py-4 bg-slate-800/50 text-white font-bold rounded-full border border-slate-700 hover:bg-slate-800 transition-all">
+                            Our History
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="welcome" class="py-24 px-6 container mx-auto">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="space-y-6">
+                    <h2 class="font-display text-4xl font-bold text-white">
+                        Welcome to the Alabama Society
+                    </h2>
+                    <p class="text-lg text-slate-400 leading-relaxed">
+                        The Alabama Society of Mayflower Descendants extends a warm welcome to all who share our heritage. Bound by the extraordinary 1620 journey, we perpetuate the memory of our ancestors.
+                    </p>
+                    <p class="text-lg text-slate-400 leading-relaxed">
+                        Beginning with the signing of <span class="text-white font-semibold">The Mayflower Compact</span>, our ancestors created the first English settlement in New England as a self-governing community founded upon democratic principles.
+                    </p>
+                </div>
+
+                <div class="glass-panel p-10 rounded-3xl relative">
+                    <div class="absolute -top-4 -left-4 bg-indigo-600 p-3 rounded-xl shadow-lg">
+                        <i data-lucide="quote" class="text-white w-6 h-6"></i>
+                    </div>
+                    <p class="text-slate-200 text-xl italic mb-8 leading-relaxed">
+                        “Our primary purpose is to perpetuate the memory of our Pilgrim ancestors, preserve their history, and promote patriotism.”
+                    </p>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 rounded-full bg-indigo-600 flex items-center justify-center font-bold text-white shadow-inner">
+                            KS
+                        </div>
+                        <div>
+                            <p class="text-white font-bold">Kevin Duane Sellew</p>
+                            <p class="text-indigo-400 text-sm font-medium">Governor, State of Alabama</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="membership" class="py-24 bg-indigo-950/20 border-y border-indigo-900/30 px-6">
+            <div class="container mx-auto max-w-5xl text-center">
+                <h2 class="font-display text-4xl font-bold text-white mb-6">Membership Eligibility</h2>
+                <p class="text-lg text-slate-400 mb-12">
+                    You are eligible to join if you can provide documentation demonstrating direct descent from a passenger who sailed on the Mayflower in 1620.
+                </p>
+
+                <div class="grid md:grid-cols-3 gap-8 text-left">
+                    <div class="bg-slate-900 p-8 rounded-2xl border border-slate-800">
+                        <div class="w-10 h-10 bg-indigo-600 rounded-full flex items-center justify-center text-white font-bold mb-4 text-sm">1</div>
+                        <h3 class="text-xl font-bold text-white mb-4">Research</h3>
+                        <p class="text-sm text-slate-400">Verify your lineage to one of the Pilgrim passengers. Our Historian provides guidance on documentation.</p>
+                    </div>
+
+                    <div class="bg-slate-900 p-8 rounded-2xl border border-slate-800">
+                        <div class="w-10 h-10 bg-indigo-600 rounded-full flex items-center justify-center text-white font-bold mb-4 text-sm">2</div>
+                        <h3 class="text-xl font-bold text-white mb-4">Synopsis Form</h3>
+                        <p class="text-sm text-slate-400 mb-6">If you believe you qualify, complete the official Lineage Synopsis Form.</p>
+                        <a href="mailto:governor@alabamasmd.org?subject=Lineage%20Synopsis%20Request&body=Full%20Name%3A%0APlease%20send%20me%20the%20Lineage%20Synopsis%20Form." 
+                           class="text-indigo-400 font-bold hover:text-indigo-300 inline-flex items-center text-sm">
+                            Request Form <i data-lucide="arrow-right" class="ml-2 w-4 h-4"></i>
+                        </a>
+                    </div>
+
+                    <div class="bg-slate-900 p-8 rounded-2xl border border-slate-800">
+                        <div class="w-10 h-10 bg-indigo-600 rounded-full flex items-center justify-center text-white font-bold mb-4 text-sm">3</div>
+                        <h3 class="text-xl font-bold text-white mb-4">Join Us</h3>
+                        <p class="text-sm text-slate-400">Attend colony meetings and become part of a community dedicated to preserving our history.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="officers" class="py-24 px-6 bg-slate-900/30">
+            <div class="container mx-auto">
+                <h2 class="font-display text-4xl font-bold text-white text-center mb-16">Society Leadership</h2>
+                <div class="grid md:grid-cols-3 gap-8 text-sm">
+                    <div class="p-8 rounded-2xl bg-slate-900 border border-slate-800">
+                        <h3 class="font-bold text-white mb-6 flex items-center"><i data-lucide="award" class="mr-2 w-5 h-5 text-indigo-400"></i> State Officers</h3>
+                        <ul class="space-y-4">
+                            <li class="flex justify-between border-b border-slate-800 pb-2"><span>Governor</span><span class="text-white">Kevin Duane Sellew</span></li>
+                            <li class="flex justify-between border-b border-slate-800 pb-2"><span>Secretary</span><span class="text-white">Regena C. Dawson</span></li>
+                        </ul>
+                    </div>
+                    <div class="p-8 rounded-2xl bg-slate-900 border border-slate-800">
+                        <h3 class="font-bold text-white mb-6 flex items-center"><i data-lucide="map-pin" class="mr-2 w-5 h-5 text-indigo-400"></i> Colony Governors</h3>
+                        <ul class="space-y-4">
+                            <li class="flex justify-between border-b border-slate-800 pb-2"><span>Cahaba River</span><span class="text-white">M. Inge Tingle</span></li>
+                            <li class="flex justify-between border-b border-slate-800 pb-2"><span>Gulf Coast</span><span class="text-white">Kevin Duane Sellew</span></li>
+                        </ul>
+                    </div>
+                    <div class="p-8 rounded-2xl bg-slate-900 border border-slate-800">
+                        <h3 class="font-bold text-white mb-6 flex items-center"><i data-lucide="users" class="mr-2 w-5 h-5 text-indigo-400"></i> Representatives</h3>
+                        <ul class="space-y-4">
+                            <li class="flex justify-between border-b border-slate-800 pb-2"><span>DGG</span><span class="text-white">Alan Michael Davis</span></li>
+                            <li class="flex justify-between border-b border-slate-800 pb-2"><span>Asst General</span><span class="text-white">Ann R. Ferguson</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="bg-black py-24 px-6 border-t border-slate-900">
             <div class="container mx-auto max-w-4xl text-center">
                 <h2 class="font-display text-4xl font-bold text-white mb-6">Have a Question?</h2>
-                <p class="text-slate-400 mb-10 text-lg leading-relaxed">
+                <p class="text-slate-400 mb-10 text-lg leading-relaxed max-w-3xl mx-auto">
                     We value your questions and comments. Please email us at the address below and we will do our best to respond to your inquiry in a timely manner. Please include:
                 </p>
                 
-                <div class="max-w-md mx-auto mb-12 bg-slate-900/50 p-8 rounded-2xl border border-white/5 text-left">
-                    <ul class="space-y-3 text-slate-300">
-                        <li class="flex items-start"><i data-lucide="chevron-right" class="w-5 h-5 mr-2 text-indigo-500 shrink-0"></i> Full Name</li>
-                        <li class="flex items-start"><i data-lucide="chevron-right" class="w-5 h-5 mr-2 text-indigo-500 shrink-0"></i> Phone Number</li>
-                        <li class="flex items-start"><i data-lucide="chevron-right" class="w-5 h-5 mr-2 text-indigo-500 shrink-0"></i> Email Address</li>
-                        <li class="flex items-start"><i data-lucide="chevron-right" class="w-5 h-5 mr-2 text-indigo-500 shrink-0"></i> Brief message outlining your request for information.</li>
-                    </ul>
-                </div>
-
-                <a href="mailto:governor@alabamasmd.org?subject=Inquiry%20from%20AlabamaSMD.org&body=Full%20Name%3A%0APhone%3A%0ABrief%20Message%3A" 
-                   class="inline-block px-10 py-4 bg-indigo-600 text-white font-bold rounded-full hover:bg-indigo-500 transition-all shadow-2xl mb-6">
-                   Email the Society
-                </a>
-                
-                <p class="text-indigo-400 font-medium block">SMDAL.Info@gmail.com</p>
-            </div>
-        </section>
+                <div class="max-w-md mx-auto mb-12 bg-slate-900/50 p-8 rounded-3xl border border-white/5 text-left shadow-2xl">
+                    <ul class="space-y-4 text-slate-300 font-medium">
+                        <li class="flex items-center"><i data-lucide="check" class="w-5 h-5 mr-3 text-indigo-500"></i> Full Name</li>
+                        <li class="flex items-center"><i data-lucide="check" class="w-5 h-5 mr-3 text-indigo-500"></i> Phone Number</li>
+                        <li class="flex items-center"><i data-lucide="check" class="w-5 h-5 mr-3 text-indigo-500"></i> Email Address</li>
